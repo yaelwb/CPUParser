@@ -1,0 +1,25 @@
+stfm FR1 1000
+ldfm 1001 FR7
+ldf FR7 12.375
+ldf FR1 0.3333
+ldf FR2 -2
+
+   mov  R17 R22   
+
+not  R1 R2
+
+xori R1 R2 3
+
+jmp 1000
+
+jmpr R1 4
+
+nop
+clr
+goto label1
+goto label2
+goto label3
+label1:
+label2: label3:
+jmpr R1 4 label4:
+label5: jmpr R1 4
